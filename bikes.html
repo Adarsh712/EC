@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIMRoam</title>
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body class="font-primary">
+    <main class="w-full">
+        <section
+            class="w-full h-[100vh]  bg-header  bg-cover bg-no-repeat bg-center bg-color1 bg-blend-multiply bg-opacity-60 ">
+            <section class="w-full flex flex-wrap justify-center ">
+                <header
+                    class="w-[85%]  xl:w-[73%]  container hidden lg:flex justify-between h-[60px]  items-center py-[45px] border-b-[1px] border-white border-opacity-40">
+                    <figure class="w-[140px]">
+                        <img src="img/logo-light.png" alt="" class="w-[100%]">
+                    </figure>
+                    <nav class="h-[100%] md:w-[70%]">
+                        <ul class="h-[100%] flex items-center gap-8 justify-end">
+                            <li class="list-none  "><a
+                                    class="decoration-none text-white hover:text-color3 transition-all duration-500"
+                                    href="index.html">Home</a></li>
+                            <li class="list-none"><a
+                                    class="decoration-none text-white  hover:text-color3 transition-all duration-500"
+                                    href="index.html">About</a></li>
+                            <li class="list-none "><a
+                                    class="decoration-none text-white  hover:text-color3 transition-all duration-500"
+                                    href="index.html">Tours</a></li>
+                            <li class="list-none"><a
+                                    class="decoration-none text-white  hover:text-color3 transition-all duration-500"
+                                    href="index.html">Destination</a></li>
+                            <li class="list-none "><a
+                                    class="decoration-none text-white  hover:text-color3 transition-all duration-500"
+                                    href="index.html">Blog</a></li>
+                            <li class="list-none"><a
+                                    class="decoration-none text-white  hover:text-color3 transition-all duration-500"
+                                    href="index.html">Gallery</a></li>
+                            <li class="list-none"><a
+                                    class="decoration-none text-white  hover:text-color3 transition-all duration-500"
+                                    href="index.html">Contact</a></li>
+                                    <li class="list-none"><a
+                                        class="decoration-none text-white  hover:text-color3 transition-all duration-500"
+                                        href="login/login3.html">Sign in</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <!-- header for mobile -->
+                <header
+                    class="w-[95%] sm:w-[70%] md:w-[80%] container flex h-[60px] justify-between  items-center  lg:hidden  py-[45px] relative border-b-[1px] border-white border-opacity-40 ">
+                    <figure class="w-[140px]">
+                        <img src="img/logo-light.png" alt="" class="w-[100%]">
+                    </figure>
+                    <div class=" w-1/2 h-full flex justify-end items-center ">
+                        <i class="bi bi-list text-3xl text-white cursor-pointer ham-menu-icon"></i>
+                    </div>
+                    <nav class="menu hidden h-[400px] w-full absolute bg-white left-0 top-[90px]   z-30 ">
+                        <ul class="h-full w-full flex flex-col  justify-center ms-6">
+                            <li class="list-none my-3"><a
+                                    class="decoration-none text-color2 flex hover:text-color4  transition-all duration-600"
+                                    href="">Home</a></li>
+                            <li class="list-none my-3"><a
+                                    class="decoration-none text-color2 flex  hover:text-color4  transition-all duration-600"
+                                    href="">About</a></li>
+                            <li class="list-none my-3"><a
+                                    class="decoration-none text-color2 flex  hover:text-color4 transition-all duration-600"
+                                    href="">Tours</a></li>
+                            <li class="list-none my-3"><a
+                                    class="decoration-none text-color2 flex  hover:text-color4 transition-all duration-600"
+                                    href="">Destination</a></li>
+                            <li class="list-none my-3"><a
+                                    class="decoration-none text-color2 flex   hover:text-color4  transition-all duration-600"
+                                    href="">Blog</a></li>
+                            <li class="list-none my-3"><a
+                                    class="decoration-none text-color2 flex  hover:text-color4  transition-all duration-600"
+                                    href="">Gallery</a></li>
+                            <li class="list-none my-3"><a
+                                    class="decoration-none text-color2 flex   hover:text-color4 transition-all duration-600"
+                                    href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <!-- end header mobile  -->
+
+            </section>
+            <section class="w-full flex justify-center mt-[180px]">
+                <div class="w-[700px] md:w-[900px] container h-auto  ">
+                    <p class="w-full text-center uppercase text-white tracking-widest [word-spacing:8px] mb-4">
+                        Lets travel Ranchi with us</p>
+                    <h1 class="w-full text-center text-white text-5xl md:text-7xl font-secondary  tracking-widest">
+                        EXPLORE RANCHI WITH <span class="travol">IIMRoam</span></h1>
+                </div>
+            </section>
+            <section class="w-full justify-center mt-[80px] hidden lg:flex relative">
+                <div
+                    class=" bg-white bg-opacity-40 container absolute w-[1000px] xl:w-[1200px] h-[100px] flex justify-center items-center backdrop-blur-lg">
+                    <div class="w-[950px] xl:w-[1100px]  container h-auto absolute m-[10px]  ">
+                        <form action="" class="flex font-primary">
+                            <input type="text" placeholder="where to?"
+                                class="py-[15px] ps-5 w-[25%] outline-none focus:outline-none">
+                            <select name="" id="" class="w-[25%] py-[15px] bg-white  ps-5" id="target">
+                                <option value="dest" selected class="bg-color1 text-white">Destination
+                                </option>
+                                <option value="it" class="text-stone-600">Patratu</option>
+                                <option value="fr" class="text-stone-600">Kalamati
+                                </option>
+                                <option value="mal" class="text-stone-600">Hundru
+                                </option>
+                                <option value="gr" class="text-stone-600">Dassam
+                                </option>
+                                <option value="ca" class="text-stone-600">Ranchi
+                                </option>
+                                <option value="du" class="text-stone-600"> Lalpur
+                                </option>
+                            </select>
+                            <select name="" id="" class="w-[25%] py-[15px] bg-white  ps-5" id="target">
+                                <option value="du" selected class="bg-color1 text-white">Duration</option>
+                                <option value="it" class="text-stone-600">1 Day Tour
+                                </option>
+                                <option value="fr" class="text-stone-600">2-4 Days Tour
+                                </option>
+                                <option value="mal" class="text-stone-600">5-7 Days Tour
+                                </option>
+                                <option value="gr" class="text-stone-600">7+ Days Tour
+                                </option>
+                            </select>
+                            <a href="" role="button"
+                                class="bg-color1 w-[25%] text-white flex items-center justify-center text-[18px] hover:bg-color3 transition-all duration-500"><i
+                                    class="bi bi-search me-2"></i>Find Now</a>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="w-full flex lg:hidden justify-center  bg-color5">
+            <div class="w-full container flex justify-center py-10">
+                <form action="" class="w-[80%] ">
+                    <input type="text" placeholder="where to?" class="w-full py-5 ps-5"><br>
+                    <select name="" id="" class="w-full py-5 bg-white  ps-5">
+                        <option value="dest" selected class="bg-color1 text-white">Destination
+                        </option>
+                        <option value="it" class="text-stone-600">Italy</option>
+                        <option value="fr" class="text-stone-600">France</option>
+                        <option value="mal" class="text-stone-600">Maldives</option>
+                        <option value="gr" class="text-stone-600">Greece</option>
+                        <option value="ca" class="text-stone-600">Canada</option>
+                        <option value="du" class="text-stone-600"> Dubai</option>
+                    </select><br>
+                    <select name="" id="" class="w-full py-5 bg-white  ps-5">
+                        <option value="du" selected class="bg-color1 text-white">Deuration
+                        </option>
+                        <option value="it" class="text-stone-600">1 Day Tour</option>
+                        <option value="fr" class="text-stone-600">2-4 Days Tour</option>
+                        <option value="mal" class="text-stone-600">5-7 Days Tour</option>
+                        <option value="gr" class="text-stone-600">7+ Days Tour</option>
+                    </select><br>
+                    <a href="" role="button"
+                        class="bg-color1 py-5 w-full text-white flex items-center justify-center text-[18px] hover:bg-color3 transition-all duration-500"><i
+                            class="bi bi-search me-2"></i>Find Now</a>
+                </form>
+            </div>
+        </section>
+
+        <section class="w-full flex justify-center bg-color7 py-8 ">
+            <div class="w-full container 2xl:px-36">
+                <div>
+                    <p class="text-color4 uppercase px-5">Choose your bike</p>
+                    <p class="text-5xl font-secondary text-color3 px-5">Our <span class="text-color1">Fleets</span></p>
+                    <div class="flex flex-wrap md:justify-between gap-10 px-6 xl:px-0 py-8 lg:px-3 ">
+                        <figure
+                            class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative photo transition-all duration-1000 ">
+                            <div
+                                class="w-[100%] h-[100%] bottom-photo absolute bg-white flex flex-col justify-center px-5">
+                                <p class="text-3xl text-color3 capitalize font-secondary">
+                                    Honda Activa 125</p>
+                                <p class="text-color1 mb-4">₹500/day</p>
+                                <p class="text-color6">The Honda Activa 125 is a reliable scooter, perfect for city
+                                    commutes and short trips. Powered by a 124cc BS6-compliant engine, it offers
+                                    excellent performance and fuel efficiency.
+                                </p>
+                                <!-- <div class="flex flex-wrap my-4">
+                                                                        <div class="w-[50%] flex"><i
+                                                                                        class="bi bi-clock text-color4"></i>
+                                                                                <p class="text-color6 ms-2">12 Days</p>
+                                                                        </div>
+                                                                        <div class="w-[50%] flex"><i
+                                                                                        class="bi bi-geo-alt text-color4"></i>
+                                                                                <p class="text-color6 ms-2">Maldives</p>
+                                                                        </div>
+                                                                        <div class="w-[50%] flex"><i
+                                                                                        class="bi bi-person text-color4"></i></i>
+                                                                                <p class="text-color6 ms-2">12+</p>
+                                                                        </div>
+                                                                        <div class="w-[50%] flex"><i
+                                                                                        class="bi bi-emoji-smile text-color4"></i></i>
+                                                                                <p class="text-color6 ms-2">9.8 Superb
+                                                                                </p>
+                                                                        </div>
+                                                                </div> -->
+                                <br><br>
+                                <a href="login/login3.html" class="underline decoration-color1 text-color6 flex mb-2">Book Ride</a>
+
+                            </div>
+                            <img src="img/101.jpg" alt="" class="w-[100%] h-[100%] object-cover brightness-75 absolute">
+                            <p
+                                class="absolute uppercase text-white bg-color3 px-4 py-1 right-1 top-12 rotate-[-90deg] ">
+                                Activa</p>
+                            <figcaption class="absolute text-white bottom-8 right-10 fig">
+                                <p class="capitalize font-secondary text-3xl">Honda Activa</p>
+                                <p class="text-right">₹500/day</p>
+                            </figcaption>
+                        </figure>
+                        <figure
+                            class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative photo transition-all duration-1000 ">
+                            <div
+                                class="w-[100%] h-[100%] bottom-photo absolute bg-white flex flex-col justify-center px-5">
+                                <p class="text-3xl text-color3 capitalize font-secondary">
+                                    Hero Maestro Edge</p>
+                                <p class="text-color1 mb-4">500/Day</p>
+                                <p class="text-color6">The Hero Maestro Edge, powered by a 110.9cc engine, offers an
+                                    excellent blend of performance and fuel efficiency. Its sharp design, LED tail lamp,
+                                    digital console, and convenient features like external fuel filling make it perfect
+                                    for smooth, stylish rides. Rent it now!</p>
+                                <!-- <div class="flex flex-wrap my-4">
+                                                                        <div class="w-[50%] flex"><i
+                                                                                        class="bi bi-clock text-color4"></i>
+                                                                                <p class="text-color6 ms-2">6 Days</p>
+                                                                        </div>
+                                                                        <div class="w-[50%] flex"><i
+                                                                                        class="bi bi-geo-alt text-color4"></i>
+                                                                                <p class="text-color6 ms-2">Italy</p>
+                                                                        </div>
+                                                                        <div class="w-[50%] flex"><i
+                                                                                        class="bi bi-person text-color4"></i></i>
+                                                                                <p class="text-color6 ms-2">10+</p>
+                                                                        </div>
+                                                                        <div class="w-[50%] flex"><i
+                                                                                        class="bi bi-emoji-smile text-color4"></i></i>
+                                                                                <p class="text-color6 ms-2"> 9.5 Superb
+                                                                                </p>
+                                                                        </div>
+                                                                </div> -->
+                                <br><br>
+                                <a href="login/login3.html" class="underline decoration-color1 text-color6 flex mb-2">Book Ride</a>
+                            </div>
+                            <img src="img/102.png" alt="" class="w-[100%] h-[100%] object-cover brightness-75 absolute">
+                            <p
+                                class="absolute uppercase text-white bg-color3 px-4 py-1 right-1 top-12 rotate-[-90deg] ">
+                                Maestro Edge</p>
+                            <figcaption class="absolute text-white bottom-8 right-10 fig">
+                                <p class="capitalize font-secondary text-3xl">Hero Maestro Edge</p>
+                                <p class="text-right">500/Day</p>
+                            </figcaption>
+                        </figure>
+                        <figure
+                            class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative photo transition-all duration-1000">
+                            <div
+                                class="w-[100%] h-[100%] bottom-photo absolute bg-white flex flex-col justify-center px-5">
+                                <p class="text-3xl text-color3 capitalize font-secondary">
+                                    Hero Passion Pro</p>
+                                <p class="text-color1 mb-4">₹600/day</p>
+                                <p class="text-color6">The Hero Passion Pro is a stylish and fuel-efficient 110cc bike,
+                                    perfect for daily commutes. With its modern design, i3S technology for improved
+                                    mileage, and comfortable seating, it combines practicality with performance. Rent
+                                    the Hero Passion Pro for a smooth and economical ride!
+                                </p>
+
+                                <br>
+                                <a href="login/login3.html" class="underline decoration-color1 text-color6 flex mb-2">Book Ride</a>
+                            </div>
+                            <img src="img/103.jpg" alt="" class="w-[100%] h-[100%] object-cover brightness-75 absolute">
+                            <p
+                                class="absolute uppercase text-white bg-color3 px-4 py-1 right-1 top-12 rotate-[-90deg] ">
+                                Passion Pro</p>
+                            <figcaption class="absolute text-white bottom-8 right-10 fig">
+                                <p class="capitalize font-secondary text-3xl">Hero Passion Pro</p>
+                                <p class="text-right">₹600/day</p>
+                            </figcaption>
+                        </figure>
+                        <figure
+                            class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative photo transition-all duration-1000 ">
+                            <div
+                                class="w-[100%] h-[100%] bottom-photo absolute bg-white flex flex-col justify-center px-5">
+                                <p class="text-3xl text-color3 capitalize font-secondary">
+                                    Bajaj Pulsar NS 150</p>
+                                <p class="text-color1 mb-4">700/Day</p>
+                                <p class="text-color6">The Bajaj Pulsar NS 150 is a sporty and powerful bike, equipped
+                                    with a 150cc engine that delivers an exhilarating performance with excellent fuel
+                                    efficiency. Its aggressive design, lightweight frame, and advanced braking system
+                                    ensure a thrilling yet safe ride. Rent the Pulsar NS 150 for unmatched style and
+                                    power!</p>
+                                <br>
+                                <a href="login/login3.html" class="underline decoration-color1 text-color6 flex mb-2">Book Ride</a>
+                            </div>
+                            <img src="img/104.jpg" alt="" class="w-[100%] h-[100%] object-cover brightness-75 absolute">
+                            <p
+                                class="absolute uppercase text-white bg-color3 px-4 py-1 right-[-15px] top-12 rotate-[-90deg] ">
+                                Pulsar NS 150</p>
+                            <figcaption class="absolute text-white bottom-8 right-10 fig">
+                                <p class="capitalize font-secondary text-3xl">Bajaj Pulsar NS 150</p>
+                                <p class="text-right">700/Day</p>
+                            </figcaption>
+                        </figure>
+                        <figure
+                            class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative photo transition-all duration-1000 ">
+                            <div
+                                class="w-[100%] h-[100%] bottom-photo absolute bg-white flex flex-col justify-center px-5">
+                                <p class="text-3xl text-color3 capitalize font-secondary">
+                                    Royal Enfield Hunter 350</p>
+                                <p class="text-color1 mb-4">₹900/day</p>
+                                <p class="text-color6">The Royal Enfield Hunter 350 blends classic design with modern
+                                    performance. Featuring a 350cc engine, it offers smooth power and excellent road
+                                    handling for both city rides and long-distance trips. With its retro aesthetics and
+                                    comfortable seating, the Hunter 350 promises a thrilling and reliable ride. Rent the
+                                    Royal Enfield Hunter 350 for a stylish and powerful experience!</p>
+                                <br>
+                                <a href="login/login3.html" class="underline decoration-color1 text-color6 flex mb-2">Book Ride</a>
+                            </div>
+                            <img src="img/105.jpg" alt="" class="w-[100%] h-[100%] object-cover brightness-75 absolute">
+                            <p
+                                class="absolute uppercase text-white bg-color3 px-4 py-1 right-[-15px] top-12 rotate-[-90deg] ">
+                                Hunter 350</p>
+                            <figcaption class="absolute text-white bottom-8 right-10 fig">
+                                <p class="capitalize font-secondary text-3xl">Royal Enfield Hunter 350</p>
+                                <p class="text-right">₹900/day</p>
+                            </figcaption>
+                        </figure>
+                        <figure
+                            class="w-full md:w-[45%] xl:w-[30%] h-[450px] relative photo transition-all duration-1000 ">
+                            <div
+                                class="w-[100%] h-[100%] bottom-photo absolute bg-white flex flex-col justify-center px-5">
+                                <p class="text-3xl text-color3 capitalize font-secondary">
+                                    Suzuki Gixxer</p>
+                                <p class="text-color1 mb-4">₹900/day</p>
+                                <p class="text-color6">The Suzuki Gixxer is a sleek and sporty motorcycle, powered by a
+                                    155cc engine that delivers impressive performance and fuel efficiency. With its
+                                    sharp design, agile handling, and comfortable ride, it's perfect for both city
+                                    commuting and weekend rides. Rent the Suzuki Gixxer for a dynamic and smooth riding
+                                    experience!</p>
+                                <br>
+                                <a href="login/login3.html" class="underline decoration-color1 text-color6 flex mb-2">Book Ride</a>
+                            </div>
+                            <img src="img/106.jpg" alt="" class="w-[100%] h-[100%] object-cover brightness-75 absolute">
+                            <p
+                                class="absolute uppercase text-white bg-color3 px-4 py-1 right-[-15px] top-12 rotate-[-90deg] ">
+                                Gixxer</p>
+                            <figcaption class="absolute text-white bottom-8 right-10 fig">
+                                <p class="capitalize font-secondary text-3xl">Suzuki Gixxer</p>
+                                <p class="text-right">₹900/day</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="w-full flex justify-center h-auto  bg-color3">
+            <footer class="w-full container h-auto flex flex-col 2xl:px-36 ">
+                <div class="flex justify-center border items-center boder-1 border-color5 my-10 flex-wrap mx-6 ">
+                    <div
+                        class="w-full lg:w-[30%] flex  items-center py-2 lg:border-r-2 lg:border-r-color5 my-5 ps-8 lg:ps-0">
+                        <i class="bi bi-telephone-outbound text-4xl me-4 text-white bg-color1 p-3"></i>
+                        <div class="w-full text-white">
+                            <p class="font-secondary">Call us</p>
+                            <p>08871756767</p>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[35%] flex items-center py-2 lg:border-r-2 lg:border-r-color5 my-5 ps-8">
+                        <i class="bi-envelope-paper text-4xl me-4 text-white bg-color1 p-3"></i>
+                        <div class="w-full text-white">
+                            <p class="font-secondary">Write to us</p>
+                            <p>support@iimroam.com</p>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[30%] flex items-center py-2 my-5 ps-8">
+                        <i class="bi bi-map text-4xl me-4 text-white bg-color1 p-3 "></i>
+                        <div class="w-full text-white">
+                            <p class="font-secondary">Address</p>
+                            <p>Ranchi, Jharkhand</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex  justify-between  my-10 flex-wrap  ">
+                    <div class="w-full md:w-[30%] flex flex-col py-2  my-5 px-6 ">
+                        <figure class="w-[80%]">
+                            <img src="img/logo-light.png" alt="" class="w-[100%]">
+                        </figure>
+                        <p class="text-color6 my-5">Discover Ranchi's attractions and get there
+                            easily with IIMRoam’s intuitive and no-nonsense services to book
+                            your favourite vehicles, dines and stays.</p>
+                        <!-- <ul class="flex  ">
+                                                        <li class="me-5"><a href=""><i
+                                                                                class="bi bi-instagram text-white bg-color1 p-3 rounded-[50%]"></i></a>
+                                                        </li>
+                                                        <li class="me-5"><a href=""><i
+                                                                                class="bi bi-github text-white  bg-color1 p-3 rounded-[50%]"></i></a>
+                                                        </li>
+                                                        <li class="me-5"><a href=""><i
+                                                                                class="bi bi-linkedin text-white  bg-color1 p-3 rounded-[50%]"></i></a>
+                                                        </li>
+                                                </ul> -->
+                    </div>
+                    <div class="w-full md:w-[30%] flex flex-col py-2  my-5 md:ps-20 px-6 ">
+                        <p class="font-secondary text-white text-xl xl:text-2xl">Quick Links</p>
+                        <ul class="mt-7 px-6">
+                            <li class="my-2 list-disc marker:text-color1"><a href="" class="text-color6">About</a></li>
+                            <li class="list-disc marker:text-color1"><a href="" class="text-color6">Tours</a></li>
+                            <li class="my-2 list-disc marker:text-color1"><a href="" class="text-color6">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-[28%] flex flex-col  py-2 my-5 px-6 md:px-0 ">
+                        <p class="font-secondary text-2xl text-white ">Subscribe</p>
+                        <p class="text-color6 mt-5">Sign up for our monthly blogletter to stay
+                            informed about travel and tours</p>
+                        <form action="" class="mt-5 flex w-full flex-wrap"><input type="email"
+                                placeholder="Email Address" class="px-2 py-5">
+                            <a href="" class="text-white bg-color4 py-5 px-3 flex mt-0 md:mt-2 lg:mt-0">Send</a>
+                        </form>
+                    </div>
+                </div>
+                <p
+                    class="text-stone-300 text-left py-5  text-[14px] relative before:content-[''] before:h-[3px] before:w-[100%] before:bg-stone-400 before:absolute before:top-0 before:bg-opacity-50">
+                    ©2024 EC Project. All rights reserved.</p>
+            </footer>
+        </section>
+    </main>
+</body>
+<script src="js/master.js"></script>
+
+</html>
